@@ -1,5 +1,7 @@
 # Officeworks AI-Native Engineer assessment
 
+I chose **ItemVista** as the name for the web product catalogue built for this assessment.
+
 ## Goal and status
 
 Build an interactive catalogue proof of concept that can evolve as the product source, visual design and mail provider change. Customers browse categories or search, open product details and send a sales enquiry. Phase 1 screen designs and Phase 2 backend APIs are approved. Phase 3 connects the React screens to the backend and removes the frontend product fixture and simulated enquiry. Phase 4 search is approved. Phase 5 implements enquiry delivery through Mailpit and was verified from the browser to the local sales inbox.
