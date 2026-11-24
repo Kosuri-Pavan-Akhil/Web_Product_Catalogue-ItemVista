@@ -1,6 +1,6 @@
-# ItemVista
+# Officeworks AI-Native Engineer Assessment | Web Product Catalogue
 
-ItemVista is a **web-only product catalogue and sales enquiry application** built for the Officeworks engineering assessment.
+This repository contains my **web-only product catalogue and sales enquiry application** for the Officeworks AI-Native Engineer assessment. I chose **ItemVista** as the name for my submission.
 
 **React** is used on the frontend to share components across the catalogue and keep interactive browser features consistent. **Node.js** is used on the backend to handle Fake Store API requests and SMTP enquiries asynchronously while keeping the mail configuration on the server. Both services use TypeScript.
 
