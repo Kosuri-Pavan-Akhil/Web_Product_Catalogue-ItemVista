@@ -1,4 +1,6 @@
-# AI usage for ItemVista
+# AI usage for the Officeworks assessment
+
+These notes document how I used AI to build and review the web product catalogue. I named the application **ItemVista**.
 
 ## Tooling and model
 
