@@ -1,6 +1,6 @@
-# ItemVista decisions
+# Design decisions for the Officeworks assessment
 
-ItemVista is a local proof of concept for browsing, searching and asking a sales team about products. The decisions below explain the current implementation, deliberate scope cuts, and how the design can grow.
+This submission is a local web proof of concept for browsing, searching and asking a sales team about products. I chose **ItemVista** as the application name. The decisions below explain the current implementation, deliberate scope cuts, and how the design can grow.
 
 ## Architecture and reviewer setup
 
