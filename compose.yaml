@@ -1,0 +1,32 @@
+name: itemvista
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "127.0.0.1:${ITEMVISTA_WEB_PORT:-8080}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  backend:
+    build: ./backend
+    environment:
+      API_HOST: "0.0.0.0"
+      SMTP_HOST: mailpit
+      SMTP_PORT: "1025"
+      SMTP_REQUIRE_TLS: "false"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/IV/v1/health').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 5s
+      timeout: 3s
+      retries: 6
+      start_period: 5s
+    depends_on:
+      mailpit:
+        condition: service_healthy
+
+  mailpit:
+    image: axllent/mailpit:v1.34.0
+    ports:
+      - "127.0.0.1:${ITEMVISTA_MAILPIT_PORT:-8025}:8025"

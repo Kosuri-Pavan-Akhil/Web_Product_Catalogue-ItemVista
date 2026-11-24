@@ -1,0 +1,25 @@
+{
+  "name": "officeworks-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.15.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "npm run build && node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/nodemailer": "^8.0.2",
+    "jest": "30",
+    "tsx": "^4.19.4",
+    "typescript": "~5.8.3"
+  },
+  "dependencies": {
+    "nodemailer": "^10.6.1"
+  }
+}
