@@ -1,6 +1,6 @@
-# ItemVista
+# Officeworks AI-Native Engineer Assessment | Web Product Catalogue
 
-ItemVista is a **web-only product catalogue and sales enquiry application** built for the Officeworks engineering assessment. It runs in a browser and supports browsing, search, shortlisting, and individual or bulk product enquiries.
+This is a **web-only product catalogue and sales enquiry application** built for the Officeworks AI-Native Engineer assessment. I chose **ItemVista** as the name for my submission. It runs in a browser and supports browsing, search, shortlisting, and individual or bulk product enquiries.
 
 The frontend and backend each have their own package manifest, lockfile, and dependencies. See [project context](CONTEXT.md) for the challenge and delivery phases.
 
